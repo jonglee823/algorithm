@@ -1,0 +1,5 @@
+.DS_Store
+.idea/*
+./programmers/level1/java/.settings
+./programmers/level1/java/bin/*
+./programmers/level1/java/bin/*/*.class
