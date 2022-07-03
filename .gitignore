@@ -28,5 +28,5 @@ tmp/**/*
 local.properties
 /src/main/resources/rebel.xml
 
-./Inflearn/bin 
-./programmers/level1/java/bin
+/Inflearn/bin 
+/programmers/level1/java/bin
