@@ -1,5 +1,31 @@
+/build/
+/bin/
+target/
+ 
+# OS Files #
 .DS_Store
-.idea/*
-./programmers/level1/java/.settings
-./programmers/level1/java/bin/*
-./programmers/level1/java/bin/*/*.class
+  
+*.class
+ 
+# Package Files #
+*.jar
+*.war
+*.ear
+*.db
+      
+# Eclipse #
+.project
+.metadata
+.classpath
+.settings/
+.loadpath
+ 
+bin/**
+tmp/**
+tmp/**/*
+*.tmp
+*.bak
+local.properties
+/src/main/resources/rebel.xml
+
+./Inflearn/bin 
