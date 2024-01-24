@@ -3,7 +3,45 @@
 
 #https://fre2-dom.tistory.com/24 출처
 
+#BFS
+from collections import deque
+
+n = int(input())
+array = [list(map(int, input())) for _ in range(n)]
+visited = [[False] * n for _ in range(n)]
+result = []
+
+
+def bfs(x, y):
+    queue = deque([(x, y)])
+    dx = [1, -1, 0, 0]
+    dy = [0, 0, 1, -1]
+
+    cnt = 0
+    while queue:
+        cx, cy = queue.popleft()
+        if 0 <= cx < n and 0 <= cy < n and not visited[cx][cy] and array[cx][cy] == 1:
+            visited[cx][cy] = True
+            cnt += 1
+            for i in range(4):
+                nx, ny = cx + dx[i], cy + dy[i]
+                queue.append((nx, ny))
+    return cnt
+
+
+for i in range(n):
+    for j in range(n):
+        if not visited[i][j] and array[i][j] == 1:
+            result.append(bfs(i, j))
+
+print(len(result))
+result.sort()
+for i in result:
+    print(i)
+
+
 import sys
+
 def dfs(x, y):
     if x <= -1 or x >= N or y <= -1 or y >= N:
         return True

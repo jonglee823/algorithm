@@ -18,6 +18,8 @@ for i in range(second):
 
 print(k)
 
+
+#시간초과
 #리펙터링 소스코드 2
 k, p, second = map(int, input().split())
 
