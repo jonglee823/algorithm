@@ -13,3 +13,16 @@ if secrit in user:
 else:
     print('normal')
 
+
+##다시 짠 코드
+import sys
+
+m, n, k = map(int, input().split())
+
+secretList = input()
+selectList = input()
+
+if secretList in selectList:
+    print('secret')
+else :
+    print('normal')
